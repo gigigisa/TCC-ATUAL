@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cadastro-login">
+        <header>
+            <img src="./imagens/cerejeira.png" alt="" class="cerejeira-cadastro">
+            <p class="titulo-cadastro">CADASTRO</p>
+            <img src="#" alt="">
+        </header>
+       
+        <p>Senha: </p>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+        <p>Email:</p>
+        <input type="email" name="email" id="email" placeholder="Digite seu email">
+    
+        <button class="btn-cadastrar">
+            CADASTRAR
+        </button>
+        <button class="btn-cadastrar">
+            REDEFINIR SENHA
+        </button>
+
+
+    </div>
+
+
+    <style>
+        .cerejeira-cadastro{
+            width: 200px;
+            rotate: -40deg;
+            margin-right: 40px;
+           
+        }
+        .cadastro-login{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .titulo-cadastro{
+            border: solid;
+            height: 50px;
+            width: 300px;
+        }
+
+        input{
+            width: 300px;
+            height: 25px;
+            background-color: aqua;
+        }
+
+        .btn-cadastrar{
+            background-color: black;
+            color: white;
+        }
+        .cadastro-login{
+            border: solid;
+            width: 400px;
+            height: 500px;
+        }
+
+
+
+
+    </style>
+
+</body>
+</html>
