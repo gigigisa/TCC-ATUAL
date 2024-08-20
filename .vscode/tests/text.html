@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letreiro de Ônibus</title>
+    <style>
+        .container {
+            width: 100%;
+            overflow: hidden; /* Esconde o texto que está fora da área visível */
+            background-color: #000; /* Cor de fundo do letreiro */
+            color: #fff; /* Cor do texto */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .marquee {
+            display: inline-block;
+            white-space: nowrap; /* Impede quebra de linha */
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="marquee">
+            Este é um exemplo de texto rolante, como um letreiro de ônibus!
+        </div>
+    </div>
+</body>
+</html>
