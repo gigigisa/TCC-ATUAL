@@ -1,0 +1,84 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+background-color: #eedce7;
+margin: 0;
+padding: 0;
+
+}
+
+.cadastro-login{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color:#eec8e0;
+    color:#6f3f32;
+    margin: 0px auto;
+    padding-top: 50px;
+
+}
+
+.titulo-cadastro{
+    
+    height: 50px;
+    width: 300px;
+    background-color: #eec8e0;
+    text-align: center;
+    margin-left: -15;
+}
+
+input{
+    width: 300px;
+    height: 25px;
+    background-color:#eec8e0;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
+}
+
+.btn-cadastrar{
+        background-color: #da5d7a;
+        color: #731414;
+        padding: 10px ;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 75px;
+        cursor: pointer;
+              
+    
+    }
+
+    .btn-cadastrar:hover{
+        background-color: #cc3055;
+    
+
+    }   
+.cadastro-login{
+    border: solid;
+    width: 418px;
+    height: 500px;  
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
+    border: none;
+}
+
+.florvadia{
+   
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    
+}
+.titulo-cherry{
+   font-size: 12px;
+   text-align: center;
+}

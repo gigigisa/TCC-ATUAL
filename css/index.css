@@ -1,0 +1,50 @@
+body{
+    background-color: #eedce7;
+    margin: 0;
+    padding: 0;
+   
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.quadrado{
+    border-radius: 30px;
+    width:310px;
+    height: 500px;
+    margin-top: 10%;
+    background-color: #eec8e0;
+    
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
+}
+#cerejeira{
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+ 
+}
+.btn-txt{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color:#6f3f32;
+    
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    margin-top: 40%;
+
+}
+.btn{
+    margin-top: 35px;
+    background-color: #c64a67;
+    color: #47271f;
+    border: none;
+    border-radius: 2px;
+    width: 100px;
+    height: 30px;
+
+}
