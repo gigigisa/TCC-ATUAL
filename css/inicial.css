@@ -1,5 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 .cerejeira{
-    width: 100px;
+    width: 117px;
     
 }
 
@@ -12,22 +19,31 @@
 .cerejeiras{
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 75px;
+    
 }
 .btn-txt{
+    margin-top: 150PX;
     display: flex;
     flex-direction: column;
     gap: 80px;
+    align-items: center;
+    
+    
 }
 #cadastrar{
-    
     text-decoration: none;
+    width: 100px;
+    color: white; 
+    font-family:Arial, Helvetica, sans-serif
+
 }
 .quadrado{
-    gap: 50px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     border-radius: 30px;
     width:310px;
     height: 500px;
@@ -40,4 +56,32 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f5d9ea ;
+    height: 100vh;
+}
+
+.btn-cadastrar{
+    background-color: #dd81b9 ;
+    
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+
+}
+
+.btn-cadastrar:hover{
+    background-color: #e48cc2 ;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+
+}
+
+.txt{
+    text-align: center;
+   
 }
