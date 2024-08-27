@@ -68,7 +68,6 @@ main{
     height: 30px;
     border-radius: 20px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
-
 }
 
 .btn-cadastrar:hover{
@@ -78,10 +77,8 @@ main{
     height: 30px;
     border-radius: 20px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
-
 }
 
 .txt{
     text-align: center;
-   
 }
