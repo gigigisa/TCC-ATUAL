@@ -1,15 +1,13 @@
 body{
     background-color: #eedce7;
     margin: 0;
-    padding: 0;
-   
+    padding: 0;   
 }
 
 main{
     display: flex;
     align-items: center;
-    justify-content: center;
-   
+    justify-content: center;   
 }
 
 .quadrado{
@@ -18,34 +16,66 @@ main{
     height: 500px;
     margin-top: 10%;
     background-color: #eec8e0;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
 }
-#cerejeira{
-    width: 200px;
-    height: 100px;
-    margin-left: 20px;
- 
+
+.cerejeira{
+    width: 117px;   
 }
 
-.btn-txt{
-    
+#cerejeira2{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.cerejeiras{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 75px;    
+}
+
+.btn-txt{    
     font-family: Arial, Helvetica, sans-serif;
-    color:#6f3f32;
-    
+    color:#6f3f32;    
     height: 200px;
     width: 100%;
     text-align: center;
     margin-top: 40%;
-
 }
+
 .btn{
     margin-top: 35px;
-    background-color: #c64a67;
-    color: #47271f;
+    background-color: #eec8e0;
+    color: #fffffe;
     border: none;
     border-radius: 2px;
     width: 100px;
     height: 30px;
+    list-style: none;
 
+}
+
+a{
+    text-decoration: none;
+    color: #f089ca;
+}
+
+.cadastro-login{ 
+    display: flex;
+    flex-direction: column;    
+}
+
+.input{
+    width: 150px;
+    height: 20px;
+}
+
+.btn-cadastrar{
+    width: 150px;
+    height: 20px;
 }
