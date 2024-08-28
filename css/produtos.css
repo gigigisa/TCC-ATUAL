@@ -1,0 +1,167 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Corrigido aqui */
+  background-color: #eedce7;
+}
+
+header {
+  width: 100%;
+  background-color: #f99dba;
+}
+
+/* Links */
+a {
+  color: #542e23;
+  text-decoration: none;
+}
+
+.col{
+width: 285px;
+height: 320px;
+border: 1px solid;
+}
+
+li{
+  color: #542e23;
+}
+
+/* Container de Cards */
+.container-card {
+  margin: 0px auto;
+  background-color: #ffd9e4;
+  width: 90%; /* Ajuste a largura para ser mais flexível */
+  max-width: 903px; /* Tamanho máximo */
+  height: auto; /* Ajusta a altura automaticamente */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta as colunas conforme o tamanho da tela */
+  grid-template-rows: auto; /* Ajusta a altura das linhas automaticamente */
+  gap: 10px; /* Adiciona espaçamento entre os itens */
+}
+
+/* Lista */
+ul {
+  display: flex;
+  font-size: 45px; /* Usando unidade relativa */
+  justify-content: space-around;
+  padding: 0;
+  margin: 5;
+}
+
+li {
+  list-style: none;
+  color: #542e23;
+}
+
+/* Cards */
+.card {
+  width: 100%; /* Ajusta a largura ao contêiner pai */
+  max-width: 300px; /* Tamanho máximo */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Melhor transição */
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #f8b9e3;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem; /* Usando unidade relativa */
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.5rem; /* Usando unidade relativa */
+  color: #6f3f32;
+}
+
+.card-content p {
+  color: #666;
+}
+
+.btn-desconto {
+  background-color: #da5d7a;
+  color: #731414;
+  padding: 0.5rem 1rem; /* Usando unidade relativa */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Usando unidade relativa */
+  margin-top: 0.5rem; /* Usando unidade relativa */
+}
+
+.btn-desconto:hover {
+  background-color: #cc3055;
+}
+
+/* Imagens */
+#img, #img2, #img3, #img4, #img5, #img6 {
+  width: 100%; /* Ajusta a largura ao contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Modal */
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  width: 80%; /* Ajusta a largura ao tamanho da tela */
+  max-width: 300px; /* Tamanho máximo */
+  height: auto; /* Ajusta automaticamente a altura */
+  border: solid 5px rgb(241, 149, 203);
+}
+
+.modal::backdrop {
+  background-color: rgba(204, 48, 85, 0.50); /* Usando rgba para transparência */
+}
+
+.qr {
+  width: 100px; /* Ajusta a largura */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Media Queries */
+
+/* Para dispositivos móveis */
+@media (max-width: 600px) {
+  ul {
+      font-size: 1.5rem; /* Reduz o tamanho da fonte para telas menores */
+      flex-direction: column; /* Empilha os itens verticalmente */
+      align-items: center; /* Centraliza os itens */
+  }
+  
+  .card-content h3 {
+      font-size: 1.25rem; /* Reduz o tamanho da fonte do título */
+  }
+  
+  .btn-desconto {
+      font-size: 0.875rem; /* Reduz o tamanho da fonte do botão */
+  }
+  
+  .container-card {
+      grid-template-columns: 1fr; /* Coloca um item por linha */
+  }
+}
+
+/* Para tablets e dispositivos com telas médias */
+@media (max-width: 768px) {
+  ul {
+      font-size: 2rem; /* Ajuste o tamanho da fonte para telas médias */
+  }
+  
+  .container-card {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta as colunas */
+  }
+}
+
