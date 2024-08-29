@@ -8,6 +8,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;   
+    height: 100vh;
+    
 }
 
 .quadrado{
@@ -20,10 +22,12 @@ main{
     justify-content: center;
     align-items: center;    
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
-}
+
+}   
 
 .cerejeira{
-    width: 117px;   
+    width: 130px;   
+    
 }
 
 #cerejeira2{
@@ -45,29 +49,41 @@ main{
     height: 200px;
     width: 100%;
     text-align: center;
-    margin-top: 40%;
+    margin-top: 60%;
+    
 }
 
 .btn{
     margin-top: 35px;
-    background-color: #eec8e0;
-    color: #fffffe;
+    background-color: #da5d7a;
     border: none;
-    border-radius: 2px;
+    border-radius: 6px;
     width: 100px;
     height: 30px;
     list-style: none;
-
+    margin-right: 0px;
+    margin-top: 10px;
+   
+    
+  
+ 
 }
 
-a{
+.a{
     text-decoration: none;
     color: #f089ca;
+   
 }
 
 .cadastro-login{ 
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 100px; 
+    width: 350px;
+    margin-bottom: 30%;
+  
 }
 
 .input{
@@ -78,4 +94,22 @@ a{
 .btn-cadastrar{
     width: 150px;
     height: 20px;
+    cursor: pointer;
+    gap: 60px;
+
+    
 }
+
+
+.cardtodos{
+    background-color: #eec8e0;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
+-moz-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
+box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
+
+}
+
+
