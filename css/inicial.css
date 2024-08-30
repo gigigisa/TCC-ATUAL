@@ -58,7 +58,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: #f5d9ea ;
-    height: 100vh;
+    height: 200vh;
 }
 
 .btn-cadastrar{
@@ -67,7 +67,7 @@ main{
     border: none;
     width: 100px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
 }
 
