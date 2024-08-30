@@ -70,15 +70,6 @@ input{
     border: none;
 }
 
-.florvadia{
-   
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- 
-    
-}
 .titulo-cherry{
    font-size: 12px;
    text-align: center;
