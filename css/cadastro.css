@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 body{
     background-color: #eedce7;
     margin: 0;
@@ -11,7 +12,6 @@ main{
     height: 100vh;
     
 }
-
 .quadrado{
     border-radius: 30px;
     width:310px;
@@ -24,9 +24,14 @@ main{
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
 
 }   
+.a{
+    font-size: larger;
+
+}
 
 .cerejeira{
-    width: 130px;   
+    width: 200px; 
+      
     
 }
 
@@ -35,6 +40,7 @@ main{
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    rotate: 90deg;
 }
 
 .cerejeiras{
@@ -44,12 +50,13 @@ main{
 }
 
 .btn-txt{    
-    font-family: Arial, Helvetica, sans-serif;
+    
     color:#6f3f32;    
     height: 200px;
     width: 100%;
     text-align: center;
     margin-top: 60%;
+   
     
 }
 
@@ -58,11 +65,12 @@ main{
     background-color: #da5d7a;
     border: none;
     border-radius: 6px;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 75px;
     list-style: none;
     margin-right: 0px;
     margin-top: 10px;
+    justify-content: center;
    
     
   
@@ -71,13 +79,16 @@ main{
 
 
 
+
 .cadastro-login{ 
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    justify-items: center;
     align-items: center;  
     margin-bottom: 100px; 
     width: 350px;
+    margin-left: 12%;
+    margin-top: 7%;
     margin-bottom: 30%;
   
 }
@@ -88,24 +99,36 @@ main{
 }
 
 .btn-cadastrar{
-    width: 150px;
-    height: 20px;
+    width: 200px;
+    height: 800px;
     cursor: pointer;
     gap: 60px;
-
+    
     
 }
 
 
 .cardtodos{
     background-color: #eec8e0;
-  justify-content: center;
-  text-align: center;
+    width: 500px;
+    height: 700px;
+    
+  justify-items: center;
+ text-align: center;
   border-radius: 50px;
   -webkit-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
 -moz-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
 box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
 
+}
+/* fonte */
+.titulo-cherry{
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-size: larger;
+  font-style: normal;
+      
+      
 }
 
 
