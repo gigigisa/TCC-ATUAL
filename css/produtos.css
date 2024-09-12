@@ -2,7 +2,6 @@
 body{
   margin :0px;
   padding:0;
-  box-sizing:borger-box;
   background-color: #eedce7;
 }
 
@@ -41,6 +40,7 @@ li{
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal
+
 }
 
 
@@ -166,33 +166,157 @@ body{
   flex-direction: column;
 } 
 
- .container-card{
- 
- }
 
- @media (max-width: 600px) {
-  header{
-    width:100vw;
-    background-color:#06c7fc;
-   }
 
-   .container-card{
-    margin: 0px auto;
-    background-color: #ffd9e4;
-    width: 600px;
-    height: 1350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
+ @media (min-width:320) and (max-width: 600px) {
   
-    gap: 0px;
-    position: relative; 
-    }
-    
-
-
-
-
+  body{
+    margin :0px;
+    padding:0;
+    box-sizing:borger-box;
+    background-color: #eedce7;
+  }
+  
+  header{
+   width:100%;
+   background-color:#f9c3d2;
+  }
+  
+  
+  a{
+  color:#542e23
+  }
+  
+  .container-card{
+  margin: 0px auto;
+  background-color: #ffd9e4;
+  width: 903px;
+  height: 1350px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px;
+  position: relative; 
+  }
+  
+  ul{
+    display: flex;
+    font-size: 45px;
+   justify-content: space-around;
+   background-color:#e76e8a;
+  }
+  
+  li{
+    list-style: none;
+    background-color:#e76e8a;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal
+  }
+  
+  
+  a{
+    text-decoration: none;
+    gap: 10PX ;
+    padding: 10px;
+  }
+  
+  .col{
+    width: 285px;
+    height: 320px;
+    border:1px solid;
+  }
+  
+ 
+  
+  .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    transition: all 1s;
+    cursor:pointer;
+  }
+  
+ 
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #6f3f32;
+  }
+  
+  .card-content p {
+    color: #666;
+  }
+  
+  .btn-desconto {
+    background-color: #da5d7a;
+    color: #731414;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .btn-desconto:hover {
+    background-color: #cc3055;
+  }
+  #img2{
+    width: 300px;
+    height: 375px;
+  }
+  
+  #img3{
+  width: 300px;
+  height: 375px;
+  
+  }
+  #img4{
+  width: 300px;
+  height: 375px;
+  
+  }
+  #img5{
+  width: 300px;
+  height: 375px;
+  
+  }
+  #img6{
+  width: 300px;
+  height: 375px;
+  }
+  
+  .qr{
+    width: 150px;
+    height: 150px;
+  }
+  
+ 
+  
+  body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+  
+   
+  
 
 }
+

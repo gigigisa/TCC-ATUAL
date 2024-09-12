@@ -72,6 +72,7 @@ main{
     margin-top: 40px;
     justify-content: center;
    
+
     
   
  
@@ -105,7 +106,9 @@ main{
     gap: 60px;
     
     
+    
 }
+
 
 
 .cardtodos{
@@ -131,4 +134,7 @@ box-shadow: 15px 9px 19px 1px #d6535380;
       
 }
 
-
+@media (min-width: 250px) and (max-width: 600px){
+   
+   
+}
