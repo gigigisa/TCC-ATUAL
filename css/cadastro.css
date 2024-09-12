@@ -21,7 +21,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;    
-    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
+    box-shadow: 5px 6px 6px #d6535380;
 
 }   
 .a{
@@ -66,10 +66,10 @@ main{
     border: none;
     border-radius: 6px;
     width: 150px;
-    height: 75px;
+    height: 50px;
     list-style: none;
     margin-right: 0px;
-    margin-top: 10px;
+    margin-top: 40px;
     justify-content: center;
    
     
@@ -116,9 +116,9 @@ main{
   justify-items: center;
  text-align: center;
   border-radius: 50px;
-  -webkit-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
--moz-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
+  -webkit-box-shadow: 15px 9px 19px 1px #d6535380;
+-moz-box-shadow: 15px 9px 19px 1px #d6535380;
+box-shadow: 15px 9px 19px 1px #d6535380;
 
 }
 /* fonte */
