@@ -71,7 +71,7 @@ main{
 
 .btn-cadastrar{
     background-color: #dd81b9 ;
-    
+    font-size: larger;
     border: none;
     width: 200px;
     height: 50px;
@@ -93,3 +93,28 @@ main{
     text-align: center;
     font-size: 30px;
 }
+
+@media (min-width: 250px) and (max-width: 600px){
+    body{
+        background-image: url(Background/cerejeira.png);
+        background-size: cover;
+        display: flex;
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .quadrado{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        border-radius: 40px;
+        width:500px;
+        height: 700px;
+        margin-top: 10%;
+        background-color: #eec8e0;    
+        box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
+    }
+
+  }
