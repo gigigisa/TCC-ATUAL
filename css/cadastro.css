@@ -10,7 +10,8 @@ main{
     align-items: center;
     justify-content: center;   
     height: 100vh;
-    
+    position: relative;
+    z-index: 1;
 }
 .quadrado{
     border-radius: 30px;
