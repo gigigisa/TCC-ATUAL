@@ -327,3 +327,21 @@ body{
 
 }
 
+/*FCONFIGURAÇÃO DOS MODAIS*/
+.modais{
+
+
+
+
+
+
+
+
+}
+
+/*FUNDO DOS MODAIS*/
+
+.modais::backdrop{
+  background-color: #cc3055;
+  opacity: 0.3;
+}

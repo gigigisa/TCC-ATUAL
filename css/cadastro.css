@@ -24,35 +24,11 @@ main{
     box-shadow: 5px 6px 6px #d6535380;
 
 }   
-.a{
-    font-size: larger;
-
-}
-
-.cerejeira{
-    width: 200px; 
-      
-    
-}
-
-#cerejeira2{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    rotate: 90deg;
-}
-
-.cerejeiras{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 75px;    
-}
 
 .btn-txt{    
     
     color:#6f3f32;    
-    height: 200px;
+    height: 700px;
     width: 100%;
     text-align: center;
     margin-top: 60%;
@@ -65,8 +41,8 @@ main{
     background-color: #da5d7a;
     border: none;
     border-radius: 6px;
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 70px;
     list-style: none;
     margin-right: 0px;
     margin-top: 40px;
@@ -89,14 +65,14 @@ main{
     margin-bottom: 100px; 
     width: 350px;
     margin-left: 12%;
-    margin-top: 7%;
+    margin-top: 100px;
     margin-bottom: 30%;
   
 }
 
 .input{
-    width: 150px;
-    height: 20px;
+    width: 200px;
+    height: 30px;
 }
 
 .btn-cadastrar{
@@ -104,7 +80,7 @@ main{
     height: 800px;
     cursor: pointer;
     gap: 60px;
-    
+    rotate: 180deg;
     
     
 }

@@ -1,62 +1,4 @@
-
-/*
-body{
-    background-color: #eedce7;
-    margin: 0;
-    padding: 0;   
-}
-
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-    height: 100vh;
-}
-
-.cardcerejeira{
-    background-color: #eec8e0;
-    width: 500px;
-    height: 700px;
-    
-  justify-items: center;
- text-align: center;
-  border-radius: 50px;
-  -webkit-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
--moz-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
-box-shadow: 15px 9px 19px 1px rgba(214,83,83,1);
-}
-
-.cerejeiras{
-    width:250px;
-    height:150px;
-}
-
-#cerejeira2{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    rotate: 90deg;
-
-}
-
-.btn-txt{    
-    
-    color:#6f3f32;    
-    height: 200px;
-    width: 100%;
-    text-align: center;
-    margin-top: 60%;
-   
-}
-
-.input{
-    width: 150px;
-    height: 20px;
-    justify-items: center;
-}
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 body{
     background-color: #eedce7;
     margin: 0;
@@ -85,15 +27,21 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 
 }
 
+.cerejeira-login{
+   margin-top: 130px;
+}
+
 
 #login{
     display: flex;
     background-color: #da5d7a;
-    margin-left: 175px;
+    margin-left: 150px;
     margin-top: 35px;
     margin-bottom: 20px;
     align-items: center;
     gap: 60px;
+    width: 200px;
+    height: 60px;
 }
 
 .btn-login:hover{
@@ -113,7 +61,7 @@ box-shadow: 15px 9px 19px 1px #d6535380;
     background-color: #da5d7a;
     border: none;
     border-radius: 6px;
-    width: 150px;
+    width: 140px;
     height: 50px;
     list-style: none;
     margin-right: 0px;
@@ -131,20 +79,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 
 }
 
-.cerejeiras{
-    width: 250px; 
-    height: 150px;
-    justify-content: space-evenly;
-    gap:75px
-}
-
-#cerejeira2{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    rotate: 90deg;
-}
 
 .btn-txt{    
     color:#6f3f32;    
@@ -165,10 +99,16 @@ box-shadow: 15px 9px 19px 1px #d6535380;
     height: 800px;
     cursor: pointer;
     gap: 60px;
-    
-    
 }
 
-
+/* fonte */
+.titulo-cherry{
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-size: larger;
+  font-style: normal;
+      
+      
+}
 
 
