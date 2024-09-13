@@ -25,6 +25,13 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 gap: 0px;
 position: relative; 
+z-index: 0;
+}
+
+.containerModal{
+  border: solid 5px black;
+  position: absolute;
+  z-index: 1;
 }
 
 ul{
