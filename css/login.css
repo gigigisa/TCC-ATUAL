@@ -10,7 +10,8 @@ main{
     align-items: center;
     justify-content: center;   
     height: 100vh;
-    
+    position: absolute;
+    z-index: 1;
 }
 
 .cardcerejeira{
@@ -117,6 +118,7 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 .container img {
 	width: 100%;
 	filter: brightness(0.2);
+  
 }
 
 .sakura {
