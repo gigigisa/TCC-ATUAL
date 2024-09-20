@@ -91,6 +91,17 @@ main{
 
 }
 
+.suporte{
+border: solid 5px black;
+ position:fixed;
+z-index:1;
+height: 150px;
+width: 100px;
+padding: 20px;
+
+
+}
+
 .btn-login{
     background-color: #dd81b9 ;
     justify-content: center;
