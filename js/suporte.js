@@ -1,14 +1,12 @@
 
+const modal = document.querySelector("#modalsuporte")
+const btnSuporte = document.querySelector("#btn-suporte")
+const btnfecharsuporte = document.querySelector("#btnfecharsuporte")
 
-const modalmodalsuporte10 = document.querySelector("#modalsuporte")
-const botaoabrir10 = document.querySelector ("#btn-suporte")
-const botaofechar10 = document.querySelector ("#btnfecharsuporte")
-
-botaoabrir.addEventListener("click",function(){
-    modalsuporte.showModal()
+btnSuporte.addEventListener("click",function (){
+    modal.showModal()
 })
 
-btnfecharsuporte.addEventListener("click",function(){
-    modalsuporte.close()
+btnfecharsuporte.addEventListener("click",()=>{
+    modal.close()
 })
-
