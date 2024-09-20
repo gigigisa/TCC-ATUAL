@@ -42,6 +42,7 @@ main{
     justify-items: center;
     margin-bottom: 10%;
     padding-bottom: 10%;
+    z-index:1 ;
     
     
     
@@ -91,6 +92,8 @@ main{
 
 }
 
+
+
 .suporte{
 border: solid 5px black;
  position:fixed;
@@ -125,6 +128,18 @@ padding: 20px;
 div.txt{
     text-align: center;
     font-size: x-large;
+}
+
+.btn-suporte{
+    background-color: #dd81b9 ;
+    font-size: larger;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+    color: white;
+
 }
 
 
