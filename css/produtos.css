@@ -176,7 +176,7 @@ body{
 
 
 
- @media (min-width:320) and (max-width: 600px) {
+ @media (min-width:350) and (max-width: 600px) {
   
   body{
     margin :0px;

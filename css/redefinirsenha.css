@@ -34,6 +34,7 @@ padding: 0;
     background-color: #eec8e0;
     text-align: center;
     margin-left: -15;
+    font-size: larger;
 }
 
 input{
@@ -41,6 +42,7 @@ input{
     height: 25px;
     background-color:#eec8e0;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
+    
 }
 
 .btn-cadastrar{
@@ -74,8 +76,15 @@ input{
    font-size: 12px;
    text-align: center;
 }
+#email{
+    font-size: medium;
+}
 
-@media (min-width: 350px) and (max-width: 600px){
+#password{
+    font-size: medium;
+}
+
+@media (min-width: 320px) and (max-width: 600px){
 
     main{
         display: flex;
