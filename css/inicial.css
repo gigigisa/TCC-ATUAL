@@ -94,16 +94,15 @@ main{
 
 
 
-.suporte{
+.input{
 border: solid 5px black;
  position:fixed;
 z-index:1;
 height: 150px;
 width: 100px;
 padding: 20px;
-
-
 }
+
 
 .btn-login{
     background-color: #dd81b9 ;
@@ -140,6 +139,13 @@ div.txt{
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
     color: white;
 
+}
+
+#modalsuporte{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 

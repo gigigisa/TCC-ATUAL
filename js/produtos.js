@@ -36,7 +36,7 @@ botaoabrir40.addEventListener("click",function(){
 })
 
 botaofechar40.addEventListener("click",function(){
-   modal30.close()
+   modal40.close()
 })
 
 //modaol20
@@ -49,7 +49,7 @@ botaoabrir20.addEventListener("click",function(){
 })
 
 botaofechar20.addEventListener("click",function(){
-   modal30.close()
+   modal20.close()
 })
 //modal70
 const modal70 = document.querySelector("#modal70")
