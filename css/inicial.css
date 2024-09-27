@@ -135,10 +135,11 @@ div.txt{
     gap: 10px;
     align-items: center;
     z-index: -1;
+    background-color: #f5d9ea;
 }
 
 
-@media (min-width: 250px) and (max-width: 600px){
+@media (min-width: 300px) and (max-width: 600px){
 .btn-cadastrar:hover{
     background-color: #e48cc2 ;
     border: none;

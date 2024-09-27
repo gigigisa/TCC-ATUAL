@@ -176,12 +176,10 @@ body{
 
 
 
- @media (min-width:350) and (max-width: 600px) {
-  
+ @media (min-width:300) and (max-width: 600px) {
   body{
     margin :0px;
     padding:0;
-    box-sizing:borger-box;
     background-color: #eedce7;
   }
   
@@ -205,6 +203,13 @@ body{
   grid-template-rows: 1fr 1fr;
   gap: 0px;
   position: relative; 
+  z-index: 0;
+  }
+  
+  .containerModal{
+    border: solid 5px black;
+    position: absolute;
+    z-index: 1;
   }
   
   ul{
@@ -220,6 +225,7 @@ body{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal
+  
   }
   
   
@@ -235,7 +241,9 @@ body{
     border:1px solid;
   }
   
- 
+  li{
+    color: #542e23;
+  }
   
   .card {
     width: 300px;
@@ -248,7 +256,9 @@ body{
     cursor:pointer;
   }
   
- 
+  .card:hover{
+    background-color: #f8b9e3;
+  }
   
   .card img {
     width: 100%;
@@ -313,7 +323,16 @@ body{
     height: 150px;
   }
   
- 
+  #modal2{
+    background-color: #cc3055;
+    z-index:1 ;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 500px;
+    height: 150px;
+    width: 150px; 
+  
+  }
   
   body{
     display:flex;
@@ -321,9 +340,6 @@ body{
     align-items: center;
     flex-direction: column;
   } 
-  
-   
-  
 
 }
 
