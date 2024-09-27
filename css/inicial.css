@@ -89,18 +89,6 @@ main{
     height: 50px;
     border-radius: 5px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
-
-}
-
-
-
-.input{
-border: solid 5px black;
- position:fixed;
-z-index:1;
-height: 150px;
-width: 100px;
-padding: 20px;
 }
 
 
@@ -146,6 +134,7 @@ div.txt{
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    z-index: -1;
 }
 
 
