@@ -50,15 +50,17 @@ main{
     margin-right: 0px;
     margin-top: 40px;
     justify-content: center;
-   
-
-    
-  
  
 }
 
 
-
+.btn:hover{
+	background-color: #cc3055 ;
+    border: none;
+    width: 200px;
+    height: 70px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+}
 
 .cadastro-login{ 
     display: flex;
@@ -456,5 +458,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 		top: 100%;
 		transform: translateX(-15vw) rotateX(180deg) rotateY(360deg);
 	}
+
 }
 

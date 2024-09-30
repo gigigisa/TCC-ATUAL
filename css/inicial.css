@@ -82,7 +82,7 @@ main{
 }
 
 .btn-cadastrar{
-    background-color: #dd81b9 ;
+    background-color: #da5d7a ;
     font-size: larger;
     border: none;
     width: 200px;
@@ -93,7 +93,7 @@ main{
 
 
 .btn-login{
-    background-color: #dd81b9 ;
+    background-color: #da5d7a ;
     justify-content: center;
     margin-top: -60px;
     border: none;
@@ -104,11 +104,18 @@ main{
 
 }
 .btn-login:hover{
-    background-color: #e48cc2 ;
+    background-color: #cc3055 ;
     border: none;
     width: 200px;
     height: 50px;
-    border-radius: 20px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+}
+
+.btn-cadastrar:hover{
+    background-color: #cc3055 ;
+    border: none;
+    width: 200px;
+    height: 50px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
 }
 
@@ -118,16 +125,25 @@ div.txt{
 }
 
 .btn-suporte{
-    background-color: #dd81b9 ;
+    background-color: #da5d7a ;
     font-size: larger;
     border: none;
-    width: 200px;
+    width: 90px;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
     color: white;
 
 }
+
+.btn-suporte:hover{
+    background-color: #cc3055 ;
+    border: none;
+    width: 90px;
+    height: 50px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+}
+
 
 #modalsuporte{
     display: flex;
