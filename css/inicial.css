@@ -9,9 +9,9 @@ body{
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #f5d9ea ;
     height: 200vh;
+
 }
 
 .cerejeira{
@@ -72,11 +72,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     border-radius: 40px;
     width:500px;
     height: 700px;
-    margin-top: 10%;
+    margin-top: 9%;
     background-color: #eec8e0;    
     box-shadow: 15px 9px 19px 1px #d6535380;
 }
