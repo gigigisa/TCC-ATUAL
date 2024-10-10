@@ -13,26 +13,44 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-
-const email=document.querySelector('#Digite seu email');
-const password=document.querySelector('#Digite sua senha');
+const btn = document.querySelector('#cadastro');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
 
 const addItem = async (data) => {
-    const newItemRef = ref(db, 'Cadastro'); 
-    const newItemKey = push(newItemRef).key; 
+    const newItemRef = ref(db, 'Cadastro');
+    const newItemKey = push(newItemRef).key;
 
     try {
         await set(ref(db, `Cadastro/${newItemKey}`), data);
         console.log('Documento adicionado com ID: ', newItemKey);
+        alert('Cliente cadastrado com sucesso!');
     } catch (error) {
         console.error('Erro ao adicionar documento: ', error);
+        alert('Erro ao cadastrar o cliente. Tente novamente.');
     }
 };
 
-CADASTRAR.addEventListener('click', () => {
-    addItem({ 
-        nome: nome.value, 
-        ra: ra.value 
-    });
+// Função para validar os campos de nome e RA
+const validarCampos = () => {
+    if (email.value.trim() === '' || password.value.trim() === '') {
+        alert('Por favor, preencha todos os campos.');
+        return false;
+    }
+    return true;
+};
+
+
+btn.addEventListener('click', () => {
+    if (validarCampos()) {
+        addItem({
+            email: email.value,
+            password: password.value
+        });
+        
+       
+    }
 });
+
+
     
