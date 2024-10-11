@@ -17,6 +17,12 @@ const btn = document.querySelector('#cadastro');
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 
+
+
+
+
+
+
 const addItem = async (data) => {
     const newItemRef = ref(db, 'Cadastro');
     const newItemKey = push(newItemRef).key;
@@ -25,6 +31,7 @@ const addItem = async (data) => {
         await set(ref(db, `Cadastro/${newItemKey}`), data);
         console.log('Documento adicionado com ID: ', newItemKey);
         alert('Cliente cadastrado com sucesso!');
+        window.location.href = 'produtos2.html';
     } catch (error) {
         console.error('Erro ao adicionar documento: ', error);
         alert('Erro ao cadastrar o cliente. Tente novamente.');
