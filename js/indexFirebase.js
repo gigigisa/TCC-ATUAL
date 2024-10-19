@@ -60,4 +60,6 @@ btn.addEventListener('click', () => {
 });
 
 
-    
+    //PEGAR O EMAIL CADASTRADO
+    // GET pelo ra
+
