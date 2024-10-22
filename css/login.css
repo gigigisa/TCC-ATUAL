@@ -35,7 +35,8 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 #login{
     display: flex;
     background-color: #da5d7a;
-    margin-left: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-top: 35px;
     margin-bottom: 20px;
     align-items: center;
