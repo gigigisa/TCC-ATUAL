@@ -15,6 +15,41 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+const addItem = async (data) => {
+    const newItemRef = ref(db, 'login');
+    const newItemKey = push(newItemRef).key;
+
+    try {
+        await set(ref(db, `login/${newItemKey}`), data);
+        console.log('Documento adicionado com ID: ', newItemKey);
+        alert('Cliente logado com sucesso!');
+        window.location.href = 'produtos2.html';
+    } catch (error) {
+        console.error('Erro ao adicionar documento: ', error);
+        alert('Erro ao logar o cliente. Tente novamente.');
+    }
+};
+
+// Função para validar os campos de nome e RA
+const validarCampos = () => {
+    if (email.value.trim() === '' || password.value.trim() === '') {
+        alert('Por favor, preencha todos os campos.');
+        return false;
+    }
+    return true;
+};
+
+
+btn.addEventListener('click', () => {
+    if (validarCampos()) {
+        addItem({
+            email: email.value,
+            password: password.value
+        });
+        
+       
+    }
+});
 
 // const email = document.querySelector('#email');
 // const password = document.querySelector('#password');
@@ -28,7 +63,7 @@ const btn = document.querySelector('#email')
 
 // GET pelo email
 const getItemByEmail = async (email) => {
-    const itemsRef = ref(db, 'Cadastro'); // Altere 'Alunos' para a sua coleção
+    const itemsRef = ref(db, 'login'); // Altere 'Alunos' para a sua coleção
     try {
         const snapshot = await get(itemsRef);
         if (snapshot.exists()) {
@@ -45,7 +80,7 @@ const getItemByEmail = async (email) => {
 
 
             if (foundItem) {
-                console.log('Email encontrado:', foundItem);
+                console.log('email encontrado:', foundItem);
             } else {
                 console.log('Nenhum email encontrado:', email);
             }
