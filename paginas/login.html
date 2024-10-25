@@ -35,7 +35,7 @@
         <div class="cerejeira-login">    
             <p class="titulo-cherry">CHERRY BLOSSOM</p>
             <p class="titulo-login">LOGIN</p> 
-               
+                
      
        
         <p>Email: </p>
@@ -46,8 +46,9 @@
         <input type="password" name="password" class="input" id="password" placeholder="Digite sua senha">
     
         <button class="btn" id="login">
-            <a href="./produtos2.html"> LOGIN</a>
+            LOGIN
         </button>
+
         <button class="btn" id="redefinirsenha">
             <a href="./redefinirsenha.html"> REDEFINIR SENHA</a>
         </button>
@@ -70,10 +71,10 @@
 
     firebase.initializeApp(firebaseConfig);
 
-    //PROCURAR EMAIL CADASTRADO | FAZER LOGIN
-    document.querySelector('#Benviar').addEventListener('click', function() {
+    // PROCURAR EMAIL CADASTRADO | FAZER LOGIN
+    document.querySelector('#login').addEventListener('click', function() {
         const email = document.getElementById('email').value; //variável que pega o valor do email
-        const senha = document.getElementById('senha').value; //variável que pega a senha
+        const senha = document.getElementById('password').value; //variável que pega a senha
 
         // AUTENTICAÇÃO DO USUÁRIO
         firebase.auth().signInWithEmailAndPassword(email, senha) //função do FIREBASE que pega o email e a senha
@@ -91,7 +92,7 @@
 
 </script>
     
-<script src="../js/login.js" type="module"></script>
+<!-- <script src="../js/login.js" type="module"></script> -->
 
 </body>
 </html>
