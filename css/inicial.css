@@ -154,7 +154,7 @@ div.txt{
 }
 
 
-@media (min-width: 300px) and (max-width: 600px){
+@media (min-width: 320px) and (max-width: 600px){
 .btn-cadastrar:hover{
     background-color: #e48cc2 ;
     border: none;

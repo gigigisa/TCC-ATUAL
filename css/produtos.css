@@ -177,6 +177,21 @@ body{
 
 
  @media (min-width:300px) and (max-width: 600px) {
+
+  .btn-desconto {
+    background-color: #da5d7a;
+    color: #731414;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .btn-desconto:hover {
+    background-color: #cc3055;
+  }
   body{
     margin :0px;
     padding:0;
@@ -304,20 +319,7 @@ body{
     color: #666;
   }
   
-  .btn-desconto {
-    background-color: #da5d7a;
-    color: #731414;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-  }
   
-  .btn-desconto:hover {
-    background-color: #cc3055;
-  }
   #img2{
     width: 300px;
     height: 375px;
