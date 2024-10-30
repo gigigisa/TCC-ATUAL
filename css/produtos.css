@@ -173,11 +173,9 @@ body{
   flex-direction: column;
 } 
 
-
-
-
  @media (min-width:300px) and (max-width: 600px) {
-
+  
+/* 
   .btn-desconto {
     background-color: #da5d7a;
     color: #731414;
@@ -192,6 +190,7 @@ body{
   .btn-desconto:hover {
     background-color: #cc3055;
   }
+
   body{
     margin :0px;
     padding:0;
@@ -288,7 +287,7 @@ body{
   
   .card {
     width: 250px;
-    height: 300px;
+    height: 600px;
     border: 1px solid #ccc;
     border-radius: 8px solid 3px;   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
@@ -298,14 +297,14 @@ body{
   
   .card:hover{
     background-color: #f8b9e3;
-  }
+  } */
   
-  .card img {
-    width: 100%;
+  /* .card img {
+    width: 50%;
     height: auto;
   }
-  
-  .card-content {
+   */
+  /* .card-content {
     padding: 20px;
   }
   
@@ -317,10 +316,10 @@ body{
   
   .card-content p {
     color: #666;
-  }
+  } */
   
   
-  #img2{
+  /* #img2{
     width: 300px;
     height: 375px;
   }
@@ -343,6 +342,11 @@ body{
   #img6{
   width: 300px;
   height: 375px;
+  } */
+/* 
+  .img-card{
+    width: 50px;
+    height: 50px;
   }
   
   .qr{
@@ -366,23 +370,42 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  } 
+  }  */
+
+  .container-card{
+display: flex;
+flex-direction: column;
+
+justify-content:space-between;
+width: 50%;
+gap: 20px;
+  }
+
+  .img-card{
+    width: 50px;
+    height: 50px;
+  }
+
+  .card{
+    width: 300px;
+    height: 600px;
+  }
+  .main{
+    height: 3000px;
+  }
+
+  .body{
+    height: 10000px;
+  }
+
+  
 
 }
 
 
 
 /*FCONFIGURAÇÃO DOS MODAIS*/
-.modais{
 
-
-
-
-
-
-
-
-}
 
 /*FUNDO DOS MODAIS*/
 
