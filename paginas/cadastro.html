@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Cherry Blossom</title>
     <header>
@@ -18,8 +20,7 @@
 <body>
 
     
-    <div class="container">
-  
+    <div class="container"> 
   
         <div class="sakura"><span></span><span></span><span></span><span></span>
             <span></span><span></span><span></span><span></span><span></span>
@@ -51,8 +52,7 @@
             <p>Email: </p>
             <input type="email" name="email" class="input" id= "email" placeholder="Digite seu email" required>
            
-            <p>Senha:</p>
-            
+            <p>Senha:</p>            
             <input type="password" name="password" class="input" id="password" placeholder="Digite sua senha" required>
 <!--         
             
@@ -64,15 +64,55 @@
         </div>
 
 
-
-      
     </div>
     </main>
 
-<script type="module" src="../js/indexFirebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+
+   
+
+<script>
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCHV4TMM33wG1ipmiuzS_NUDx8s0LrvzSQ",
+    authDomain: "cherryblossomcb.firebaseapp.com",
+    databaseURL: "https://cherryblossomcb-default-rtdb.firebaseio.com",
+    projectId: "cherryblossomcb",
+    storageBucket: "cherryblossomcb.appspot.com",
+    messagingSenderId: "981485780049",
+    appId: "1:981485780049:web:5b1a934a3d4999a8d94c70"
+  };
+
+    firebase.initializeApp(firebaseConfig);
+
+    document.getElementById('cadastro').addEventListener('click', function() {
+        //trazer elemento com o valor do input text email da tela de cadastro 
+         //trazer elemento com o valor do input password  da tela de cadastro 
+         
+            const email = document.querySelector("#email").value;
+            const senha = document.querySelector("#password").value;
+      
+    
+        //AQUI PODE COLOCAR UMA VALIDAÇÃO DE SENHA QUE VOCÊ PRECISAR, DEPOIS COLOCAR O CÓDIGO ABAIXO DENTRO DESSA VALIDAÇÃO. 
+    
+    
+            // Se a senha for válida, tente cadastrar o usuário
+            firebase.auth().createUserWithEmailAndPassword(email, senha)
+            .then((userCredential) => {
+                // O cadastro foi bem-sucedido
+                alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
+            })
+            .catch((error) => {
+                // Se houve um erro, mostre a mensagem
+                alert("Erro ao cadastrar: " + error.message);
+            });
+        });
+</script>
+    
     
 
-<script src="../js/indexFirebase.js"></script>
+
 </body>
 </html>
 
