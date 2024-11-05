@@ -53,62 +53,71 @@
             <input type="email" name="email" class="input" id= "email" placeholder="Digite seu email" required>
            
             <p>Senha:</p>            
-            <input type="password" name="password" class="input" id="password" placeholder="Digite sua senha" required>
-        
+            <input type="password" name="password" class="input" id="senha" placeholder="Digite sua senha" required>      
             
-            <button class="btn-cadastrar">
-                <a href="./produtos2.html" id="Cadastrar"> cadastrar</a>
-             </button>
+            <button class="btn-cadastrar" id="cadastrar"> cadastrar </button>
+
+
             
-       
         </div>
 
 
     </div>
     </main>
-
+    
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 
-   
+
 
 <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyCHV4TMM33wG1ipmiuzS_NUDx8s0LrvzSQ",
+        authDomain: "cherryblossomcb.firebaseapp.com",
+        databaseURL: "https://cherryblossomcb-default-rtdb.firebaseio.com",
+        projectId: "cherryblossomcb",
+        storageBucket: "cherryblossomcb.firebasestorage.app",
+        messagingSenderId: "981485780049",
+        appId: "1:981485780049:web:5b1a934a3d4999a8d94c70"
+        };
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCHV4TMM33wG1ipmiuzS_NUDx8s0LrvzSQ",
-    authDomain: "cherryblossomcb.firebaseapp.com",
-    databaseURL: "https://cherryblossomcb-default-rtdb.firebaseio.com",
-    projectId: "cherryblossomcb",
-    storageBucket: "cherryblossomcb.appspot.com",
-    messagingSenderId: "981485780049",
-    appId: "1:981485780049:web:5b1a934a3d4999a8d94c70"
-  };
+        firebase.initializeApp(firebaseConfig);
 
-    firebase.initializeApp(firebaseConfig);
+  //CADASTRAR
+  document.getElementById('cadastrar').addEventListener('click', function() {
+  
+    //trazer elemento com o valor do input text email da tela de cadastro 
+     //trazer elemento com o valor do input password  da tela de cadastro 
 
-    document.getElementById('cadastro').addEventListener('click', function() {
-        //trazer elemento com o valor do input text email da tela de cadastro 
-         //trazer elemento com o valor do input password  da tela de cadastro 
-         
-            const email = document.querySelector("#email").value;
-            const senha = document.querySelector("#password").value;
-      
-    
-        //AQUI PODE COLOCAR UMA VALIDAÇÃO DE SENHA QUE VOCÊ PRECISAR, DEPOIS COLOCAR O CÓDIGO ABAIXO DENTRO DESSA VALIDAÇÃO. 
-    
-    
-            // Se a senha for válida, tente cadastrar o usuário
-            firebase.auth().createUserWithEmailAndPassword(email, senha)
-            .then((userCredential) => {
-                // O cadastro foi bem-sucedido
-                alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
-            })
-            .catch((error) => {
-                // Se houve um erro, mostre a mensagem
-                alert("Erro ao cadastrar: " + error.message);
-            });
+
+     
+        const email = document.querySelector("#email").value //chamar elemento email
+        const senha = document.querySelector("#senha").value //chamar elemento senha
+
+    //AQUI PODE COLOCAR UMA VALIDAÇÃO DE SENHA QUE VOCÊ PRECISAR, DEPOIS COLOCAR O CÓDIGO ABAIXO DENTRO DESSA VALIDAÇÃO. 
+
+
+        // Se a senha for válida, tente cadastrar o usuário
+        firebase.auth().createUserWithEmailAndPassword(email, senha)
+        .then((userCredential) => {
+            // O cadastro foi bem-sucedido
+            alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
+            window.location.href = "produtos2.html";
+           
+        })
+        .catch((error) => {
+            // Se houve um erro, mostre a mensagem
+            alert("Erro ao cadastrar: " + error.message);
         });
-</script>
+    });
+
+     
+
+   
+
+   
+
+    </script>
 
 
 

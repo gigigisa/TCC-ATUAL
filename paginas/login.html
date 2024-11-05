@@ -43,17 +43,15 @@
        
         <p>Senha:</p>
         
-        <input type="password" name="password" class="input" id="password" placeholder="Digite sua senha">
+        <input type="password" name="password" class="input" id="senha" placeholder="Digite sua senha">
     
-        <button class="btn" id="login">
-          LOGIN 
-        </button>
-        <a href="./produtos2.html"></a>
-        <button class="btn2" id="redefinirsenha">
-             REDEFINIR SENHA
-        </button>
-        <a href="./redefinirsenha.html"></a>
+        <button class="btn-login">
+            <a href="./produtos2.html" id="login"> LOGIN</a>
+         </button>
         
+         <button class="btn2">
+            <a href="./produtos2.html" id="redefinirsenha"> REDEFINIR SENHA</a>
+         </button>
    
     </div>
 </div>
@@ -76,7 +74,7 @@
 
   document.querySelector('#login').addEventListener('click', function() {
             const email = document.querySelector("#email").value; //variável que pega o valor do email
-            const senha =  document.querySelector("#password").value; //variável que pega a senha
+            const senha =  document.querySelector("#senha").value; //variável que pega a senha
             const redefinirsenha = document.querySelector("#redefinirsenha").value;
 
             // AUTENTICAÇÃO DO USUÁRIO
