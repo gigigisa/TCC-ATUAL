@@ -80,17 +80,24 @@ main{
     width: 200px;
     height: 30px;
 }
-
 .btn-cadastrar{
-    width: 200px;
-    height: 800px;
-    cursor: pointer;
-    gap: 60px;
-    rotate: 180deg;
-    
-    
-}
+	margin-top: 35px;
+    background-color: #da5d7a;
+    border: none;
+    border-radius: 6px;
+    width: 140px;
+    height: 50px;
+    list-style: none;
+    margin-right: 10px;
+    justify-content: center;
+	
 
+
+
+
+
+
+}
 
 
 .cardtodos{
