@@ -39,17 +39,14 @@
      
        
         <p>Email: </p>
-        <input type="email" name="email" class="input"  id="email" placeholder="Digite seu email">
-       
+        <input type="email" name="email" class="input"  id="email" placeholder="Digite seu email">       
         <p>Senha:</p>
         
-        <input type="password" name="password" class="input" id="senha" placeholder="Digite sua senha">
-    
-        <button class="btn-login">
-            <a href="./produtos2.html" id="login"> LOGIN</a>
-         </button>
+        <input type="password" name="password" class="input" id="senha" placeholder="Digite sua senha">    
+
+        <button class="btn-login" id="btn-login"> login  </button>
         
-         <button class="btn2">
+         <button class="btn-redefinir">
             <a href="./produtos2.html" id="redefinirsenha"> REDEFINIR SENHA</a>
          </button>
    
@@ -58,55 +55,46 @@
 </main>
 
 
+
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 
 <script>
-  const firebaseConfig = {
+    const firebaseConfig = {
     apiKey: "AIzaSyCHV4TMM33wG1ipmiuzS_NUDx8s0LrvzSQ",
     authDomain: "cherryblossomcb.firebaseapp.com",
     databaseURL: "https://cherryblossomcb-default-rtdb.firebaseio.com",
     projectId: "cherryblossomcb",
-    storageBucket: "cherryblossomcb.appspot.com",
+    storageBucket: "cherryblossomcb.firebasestorage.app",
     messagingSenderId: "981485780049",
     appId: "1:981485780049:web:5b1a934a3d4999a8d94c70"
   };
 
-  document.querySelector('#login').addEventListener('click', function() {
-            const email = document.querySelector("#email").value; //variável que pega o valor do email
-            const senha =  document.querySelector("#senha").value; //variável que pega a senha
-            const redefinirsenha = document.querySelector("#redefinirsenha").value;
+    firebase.initializeApp(firebaseConfig);
 
-            // AUTENTICAÇÃO DO USUÁRIO
-            firebase.auth().signInWithEmailAndPassword(email, senha) //função do FIREBASE que pega o email e a senha
-            .then(response => {
-                //AQUI VOCÊ COLOCA O CÓDIGO PARA EXECUTAR QUANDO O LOGIN DER CERTO. 
-                alert("Usuário conectado com sucesso!"); //opcional
-                window.location.href = "produtos2.html"; // Redireciona para index2.html
-            })
-            .catch(error => {
-                alert("Usuário não encontrado | email ou senha incorretos"); // Mostra erro em um alert!
-                console.log("Erro!", error);
-                
-            });
-        });
+    //PROCURAR EMAIL CADASTRADO | FAZER LOGIN
+    document.querySelector('#btn-login').addEventListener('click', function() {
+        const email = document.getElementById('email').value; //variável que pega o valor do email
+        const senha = document.getElementById('senha').value; //variável que pega a senha
 
-         document.getElementById('btn-redefinir').addEventListener('click', function() {
-        const email = document.getElementById('email').value;
-
-        // Enviar o email para redefinição de senha
-        firebase.auth().sendPasswordResetEmail(email)
-        .then(() => {
-            alert("Email de redefinição de senha enviado! Verifique sua caixa de entrada.");
+        // AUTENTICAÇÃO DO USUÁRIO
+        firebase.auth().signInWithEmailAndPassword(email, senha) //função do FIREBASE que pega o email e a senha
+        .then(response => {
+            //AQUI VOCÊ COLOCA O CÓDIGO PARA EXECUTAR QUANDO O LOGIN DER CERTO. 
+            alert("Usuário conectado com sucesso!"); //opcional
+            window.location.href = "produtos2.html"; // Redireciona para index2.html
         })
         .catch(error => {
-            alert("Erro ao enviar email de redefinição de senha: " + error.message);
-            console.log("Erro:", error);
+            alert("Usuário não encontrado | email ou senha incorretos"); // Mostra erro em um alert!
+            console.log("Erro!", error);
+            
         });
     });
 
 
+   
 </script>
+
 
 </body>
 </html>
