@@ -40,12 +40,17 @@ box-shadow: 15px 9px 19px 1px #d6535380;
     margin-top: 35px;
     margin-bottom: 20px;
     align-items: center;
+	justify-content: center;
     gap: 60px;
     width: 200px;
     height: 60px;
 	
 }
 
+.btn-redefinir{
+	background-color: #da5d7a;
+
+}
 
 
 
@@ -89,12 +94,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
     height: 30px;
 }
 
-.btn-cadastrar{
-    width: 200px;
-    height: 800px;
-    cursor: pointer;
-    gap: 60px;
-}
 
 
 .titulo-cherry{
