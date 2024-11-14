@@ -35,6 +35,7 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 .btn-login{
     display: flex;
     background-color: #da5d7a;
+	font-size: larger;
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 35px;
@@ -46,13 +47,15 @@ box-shadow: 15px 9px 19px 1px #d6535380;
     gap: 60px;
     width: 200px;
     height: 60px;
-	
+	color: aliceblue;
+	box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2)
 }
-
-.btn-redefinir{
-	background-color: #da5d7a;
-	border:#da5d7a;
-
+.btn-login:hover{
+	background-color: #cc3055 ;
+    border: none;
+	width: 200px;
+    height: 60px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2)
 }
 
 .btn{

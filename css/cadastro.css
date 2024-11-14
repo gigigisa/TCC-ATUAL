@@ -75,15 +75,31 @@ main{
     height: 30px;
 }
 .btn-cadastrar{
-	margin-top: 35px;
+	display: flex;
     background-color: #da5d7a;
+	font-size: larger;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+	border:#da5d7a;
+	color: aliceblue;
+	border-radius:5px;
+    align-items: center;
+	justify-content: center;
+    gap: 60px;
+    width: 200px;
+    height: 60px;
+	box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2)
+	
+}
+
+.btn-cadastrar:hover{
+	background-color: #cc3055 ;
     border: none;
-    border-radius: 6px;
-    width: 140px;
-    height: 50px;
-    list-style: none;
-    margin-right: 10px;
-    justify-content: center;
+	width: 200px;
+    height: 60px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
 }
 
 
