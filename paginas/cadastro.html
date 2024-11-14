@@ -83,30 +83,25 @@
 
         firebase.initializeApp(firebaseConfig);
 
-  //CADASTRAR
+ 
   document.getElementById('cadastrar').addEventListener('click', function() {
   
-    //trazer elemento com o valor do input text email da tela de cadastro 
-     //trazer elemento com o valor do input password  da tela de cadastro 
-
-
+   
      
-        const email = document.querySelector("#email").value //chamar elemento email
-        const senha = document.querySelector("#senha").value //chamar elemento senha
-
-    //AQUI PODE COLOCAR UMA VALIDAÇÃO DE SENHA QUE VOCÊ PRECISAR, DEPOIS COLOCAR O CÓDIGO ABAIXO DENTRO DESSA VALIDAÇÃO. 
+        const email = document.querySelector("#email").value 
+        const senha = document.querySelector("#senha").value 
 
 
-        // Se a senha for válida, tente cadastrar o usuário
+
+
         firebase.auth().createUserWithEmailAndPassword(email, senha)
         .then((userCredential) => {
-            // O cadastro foi bem-sucedido
+         
             alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
             window.location.href = "produtos2.html";
            
         })
-        .catch((error) => {
-            // Se houve um erro, mostre a mensagem
+        .catch((error) => {''
             alert("Erro ao cadastrar: " + error.message);
         });
     });

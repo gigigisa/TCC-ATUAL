@@ -11,7 +11,7 @@
 </head>
 <body> 
 
-    <!--DIV COM TODAS AS PÉTALAS-->
+
     <div class="container">
   
   
@@ -75,20 +75,20 @@
 
     firebase.initializeApp(firebaseConfig);
 
-    //PROCURAR EMAIL CADASTRADO | FAZER LOGIN
+ 
     document.querySelector('#btn-login').addEventListener('click', function() {
-        const email = document.getElementById('email').value; //variável que pega o valor do email
-        const senha = document.getElementById('senha').value; //variável que pega a senha
+        const email = document.getElementById('email').value; 
+        const senha = document.getElementById('senha').value; 
 
-        // AUTENTICAÇÃO DO USUÁRIO
-        firebase.auth().signInWithEmailAndPassword(email, senha) //função do FIREBASE que pega o email e a senha
+        
+        firebase.auth().signInWithEmailAndPassword(email, senha) 
         .then(response => {
-            //AQUI VOCÊ COLOCA O CÓDIGO PARA EXECUTAR QUANDO O LOGIN DER CERTO. 
-            alert("Usuário conectado com sucesso!"); //opcional
-            window.location.href = "produtos2.html"; // Redireciona para index2.html
+          
+            alert("Usuário conectado com sucesso!"); 
+            window.location.href = "produtos2.html"; 
         })
         .catch(error => {
-            alert("Usuário não encontrado | email ou senha incorretos"); // Mostra erro em um alert!
+            alert("Usuário não encontrado | email ou senha incorretos");
             console.log("Erro!", error);
             
         });
