@@ -83,6 +83,7 @@
 
         firebase.initializeApp(firebaseConfig);
 
+<<<<<<< HEAD
  
   document.getElementById('cadastrar').addEventListener('click', function() {
   
@@ -97,11 +98,26 @@
         firebase.auth().createUserWithEmailAndPassword(email, senha)
         .then((userCredential) => {
          
+=======
+        
+  document.getElementById('cadastrar').addEventListener('click', function() {     
+        const email = document.querySelector("#email").value 
+        const senha = document.querySelector("#senha").value
+
+       
+        firebase.auth().createUserWithEmailAndPassword(email, senha)
+        .then((userCredential) => {
+        
+>>>>>>> 2a7604cd99e1eebd406593dc25c133e3b7591daa
             alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
             window.location.href = "produtos2.html";
            
         })
+<<<<<<< HEAD
         .catch((error) => {''
+=======
+        .catch((error) => {
+>>>>>>> 2a7604cd99e1eebd406593dc25c133e3b7591daa
             alert("Erro ao cadastrar: " + error.message);
         });
     });
