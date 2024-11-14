@@ -20,7 +20,6 @@ main{
     margin-top: 10%;
     background-color: #eec8e0;
     display: flex;
-    justify-content: center;
     align-items: center;    
     box-shadow: 5px 6px 6px #d6535380;
 
@@ -29,14 +28,11 @@ main{
 
 
 .btn-txt{    
-    
     color:#6f3f32;    
     height: 700px;
     width: 100%;
     text-align: center;
     margin-top: 60%;
-   
-    
 }
 
 .btn{
@@ -47,7 +43,6 @@ main{
     width: 200px;
     height: 70px;
     list-style: none;
-    margin-right: 0px;
     margin-top: 40px;
     justify-content: center;
  
@@ -65,7 +60,6 @@ main{
 .cadastro-login{ 
     display: flex;
     flex-direction: column; 
-    justify-items: center;
     align-items: center;  
     margin-bottom: 100px; 
     width: 350px;
@@ -97,16 +91,15 @@ main{
     background-color: #eec8e0;
     width: 500px;
     height: 700px;
-    
-  justify-items: center;
- text-align: center;
-  border-radius: 50px;
-  -webkit-box-shadow: 15px 9px 19px 1px #d6535380;
--moz-box-shadow: 15px 9px 19px 1px #d6535380;
-box-shadow: 15px 9px 19px 1px #d6535380;
+    justify-items: center;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-box-shadow: 15px 9px 19px 1px #d6535380;
+    -moz-box-shadow: 15px 9px 19px 1px #d6535380;
+    box-shadow: 15px 9px 19px 1px #d6535380;
 
 }
-/* fonte */
+
 .titulo-cherry{
     font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
@@ -117,15 +110,7 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 }
 
 @media (min-width: 300px) and (max-width: 600px){
-
-   
-   
 }
-
-
-
-
-
 .container img {
 	width: 100%;
 	filter: brightness(0.2);
@@ -147,7 +132,7 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 	background-color: #ffb6c1;
 }
 
-/* add animation */
+
 .sakura span:nth-child(2n+1) {
 	animation: sakura-anim-1 10s 0s linear infinite;
 }
@@ -156,7 +141,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 	animation: sakura-anim-2 10s 0s linear infinite;
 }
 
-/* side position */
 .sakura span:nth-child(1) {
 	left: 0%;
 }
@@ -357,7 +341,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 	left: 98%;
 }
 
-/* size */
 .sakura span:nth-child(3n+1) {
 	width: 1vw;
 	height: 0.5vw;
@@ -373,7 +356,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 	height: 0.3vw;
 }
 
-/* animation-duration */
 .sakura span:nth-child(4n+1) {
 	animation-duration: 5s;
 }
@@ -390,8 +372,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 	animation-duration: 6s;
 }
 
-
-/* animation-delay */
 .sakura span:nth-child(11n+1) {
 	animation-delay: 0s;
 }
@@ -436,7 +416,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 	animation-delay: 10s;
 }
 
-/* animation */
 @keyframes sakura-anim-1 {
 	0% {
 		top: -10%;

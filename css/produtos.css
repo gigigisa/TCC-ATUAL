@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 body{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
   margin :0px;
-  padding:0;
-  background-color: #eedce7;
 }
 
 header{
  width:100%;
- background-color:#f9c3d2;
+ background-color:#f5b0c3;
 }
 
 
@@ -17,10 +18,10 @@ color:#542e23
 
 .container-card{
 margin: 0px auto;
-/* background-color: #ffd9e4; */
 width: 903px;
 height: 1500px;
 display:grid;
+background-color: #f9c3d2;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 gap: 0px;
@@ -73,7 +74,7 @@ li{
   align-items: center;
   justify-content: center;
   width: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid #da5d7a;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -151,15 +152,6 @@ height: 375px;
   height: 150px;
 }
 
-/* #modal50{
-  background-color: #cc3055;
-  z-index:1 ;
-  position: absolute;
-  margin-top: 100px;
-  margin-left: 500px;
-  height: 150px;
-  width: 150px; 
-  } */
 
 #modal2{
   background-color: #cc3055;
@@ -172,15 +164,8 @@ height: 375px;
 
 }
 
-body{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} 
 
 @media (max-width: 300px){
- /* @media (min-width:300px) and (max-width: 600px) { */
  body{
   margin :0px;
   padding:0;
@@ -220,55 +205,14 @@ body{
   align-items: center;
   gap: 20px;
   }
-
-
-  /* main{
-    width: 100vw;    
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    gap: 50px;
-
-  } */
   
   .containerModal{
     border: solid 5px black;
     position: absolute;
     z-index: 1;
   }
-  
-  /* ul{
-    display: flex;
-    font-size: 45px;
-   justify-content: space-around;
-   background-color:#e76e8a;
-  } */
-/*   
-  li{
-    list-style: none;
-    background-color:#e76e8a;
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal
-  
-  } */
-  
-/*   
-  a{
-    text-decoration: none;
-    gap: 10px ;
-    padding: 10px;
-  } */
-  
-  /* .col{
-    width: 285px;
-    height: 320px;
-    border:1px solid;
-  } */
-  
-  /* li{
-    color: #542e23;
-  } */
+
+
   
   .card {
     width: 200px;
@@ -284,11 +228,6 @@ body{
     background-color: #f8b9e3;
     width: 200px;
   } 
-  
-   /* .card img {
-    width: 50%;
-    height: auto;
-  } */
 
   .card-content {
     padding: 20px;
@@ -302,7 +241,7 @@ body{
   }
   
   .card-content p {
-    color: #6f3f32bf;
+    color: #291415bf;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 100px;
@@ -359,14 +298,6 @@ body{
     width: 150px; 
   }
   
-  
-  /* body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }   */
-
 .container-card{
 display: flex;
 flex-direction: column;
