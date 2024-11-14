@@ -11,7 +11,11 @@
 </head>
 <body> 
 
+<<<<<<< HEAD
+
+=======
     
+>>>>>>> 2a7604cd99e1eebd406593dc25c133e3b7591daa
     <div class="container">
   
   
@@ -68,6 +72,17 @@
 
     firebase.initializeApp(firebaseConfig);
 
+<<<<<<< HEAD
+ 
+    document.querySelector('#btn-login').addEventListener('click', function() {
+        const email = document.getElementById('email').value; 
+        const senha = document.getElementById('senha').value; 
+
+        
+        firebase.auth().signInWithEmailAndPassword(email, senha) 
+        .then(response => {
+          
+=======
    
     document.querySelector('#btn-login').addEventListener('click', function() {
         const email = document.getElementById('email').value;
@@ -75,11 +90,16 @@
 
         firebase.auth().signInWithEmailAndPassword(email, senha) 
         .then(response => {
+>>>>>>> 2a7604cd99e1eebd406593dc25c133e3b7591daa
             alert("Usuário conectado com sucesso!"); 
             window.location.href = "produtos2.html"; 
         })
         .catch(error => {
+<<<<<<< HEAD
+            alert("Usuário não encontrado | email ou senha incorretos");
+=======
             alert("Usuário não encontrado | email ou senha incorretos"); 
+>>>>>>> 2a7604cd99e1eebd406593dc25c133e3b7591daa
             console.log("Erro!", error);
             
         });
