@@ -8,6 +8,7 @@ body{
 
 header{
  width:100%;
+ 
  background-color:#f3b1c7;
 }
 
@@ -165,12 +166,19 @@ height: 375px;
 }
 
 
-@media (max-width: 300px){
+@media (max-width: 800px){
  body{
   margin :0px;
   padding:0;
   background-color: #eedce7;
 }
+
+@media (min-width: 300px){
+  body{
+   margin :0px;
+   padding:0;
+   background-color: #eedce7;
+ }
 
   .btn-desconto {
     background-color: #da5d7a;
@@ -188,8 +196,9 @@ height: 375px;
   }
 
   header{
-   width:100vw;
+
    background-color:#f9c3d2;
+
   }
     
   a{
