@@ -173,7 +173,7 @@ height: 375px;
   background-color: #eedce7;
 }
 
-@media (min-width: 300px){
+@media (min-width: 300px){ 
   body{
    margin :0px;
    padding:0;
@@ -321,4 +321,5 @@ gap: 20px;
 .modais::backdrop{
   background-color: #cc3055;
   opacity: 0.3;
+}
 }

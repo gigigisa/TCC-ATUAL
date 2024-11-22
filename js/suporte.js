@@ -1,12 +1,16 @@
 
-const modal = document.querySelector("#modalsuporte")
-const btnSuporte = document.querySelector("#btn-suporte")
-const btnfecharsuporte = document.querySelector("#btnfecharsuporte")
+const btnSuporte = document.getElementById('btn-suporte');
+const modalSuporte = document.getElementById('modalsuporte');
+const btnFecharSuporte = document.getElementById('btnfecharsuporte');
+const textareaSuporte = document.getElementById('mensagem-suporte');
 
-btnSuporte.addEventListener("click",function (){
-    modal.showModal()
-})
 
-btnfecharsuporte.addEventListener("click",()=>{
-    modal.close()
-})
+btnSuporte.addEventListener('click', () => {
+    
+    modalSuporte.showModal(); 
+});
+
+
+btnFecharSuporte.addEventListener('click', () => {
+   
+});

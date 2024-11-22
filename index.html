@@ -15,8 +15,18 @@
 
     <dialog id="modalsuporte" class="modais">        
         <p> Relate o erro:</p>
-        <textarea rows="10" cols="50"></textarea>
-        <button class="btn-suporte" id="btnfecharsuporte">Enviar</button>
+
+        <form action="https://formsubmit.co/cherryblossomcb24@gmail.com" method="POST">
+
+            <textarea rows="10" cols="50" required name="text"></textarea>
+            <button class="btn-suporte" id="btnfecharsuporte" type="submit">Enviar</button>
+            <input type="hidden" name="_subject" value="Nova mensagem!"> 
+             <input type="text" name="_honey" style="display: none;"> 
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+
+        </form>
+
     </dialog>
     
 
