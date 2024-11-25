@@ -58,25 +58,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2)
 }
 
-<<<<<<< HEAD
-
-
-/* .btn{
-=======
-.btn{
->>>>>>> 2a7604cd99e1eebd406593dc25c133e3b7591daa
-    margin-top: 35px;
-    background-color: #da5d7a;
-    border: none;
-    border-radius: 6px;
-    width: 140px;
-    height: 50px;
-    list-style: none;
-    margin-right: 10px;
-    margin-top: 50px;
-    justify-content: center;
-} */
-
 
 .a{
     font-size: 100%;
@@ -88,13 +69,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
 
 
 }
-/* .btn-txt{    
-    color:#14ff0c;    
-    height: 200px;
-    width: 100%;
-    text-align: center;
-    margin-top: 60%;
-} */
 
 
 .input{
@@ -112,10 +86,6 @@ box-shadow: 15px 9px 19px 1px #d6535380;
       
       
 }
-
-
-
-
 
 @media (min-width:300px) and (max-width: 600px){
 	
