@@ -125,7 +125,7 @@ main{
       
 }
 
-@media (min-width: 300px) and (max-width: 600px){
+@media (max-width: 300px){
 }
 .container img {
 	width: 100%;

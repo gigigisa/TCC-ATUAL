@@ -4,13 +4,10 @@ body{
   justify-content: center;
   flex-direction: column;
   margin :0px;
+  background-color:#f3b1c7;
 }
 
-header{
- width:100%;
- 
- background-color:#f3b1c7;
-}
+
 
 
 a{
@@ -120,6 +117,16 @@ li{
   margin-top: 10px;
 }
 
+#btn-sair {
+  background-color: #f3b1c7;
+  width: 90px;
+  border: none;
+  margin-left: 2450px;
+  font-size: 20px;
+
+
+}
+
 .btn-desconto:hover {
   background-color: #cc3055;
 }
@@ -166,18 +173,12 @@ height: 375px;
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 300px){
  body{
   margin :0px;
   padding:0;
-  background-color: #eedce7;
-}
+  background-color:#f9c3d2;
 
-@media (min-width: 300px){ 
-  body{
-   margin :0px;
-   padding:0;
-   background-color: #eedce7;
  }
 
   .btn-desconto {
@@ -195,11 +196,7 @@ height: 375px;
     background-color: #da5d7a;
   }
 
-  header{
-
-   background-color:#f9c3d2;
-
-  }
+  
     
   a{
   color:#542e23
@@ -321,5 +318,4 @@ gap: 20px;
 .modais::backdrop{
   background-color: #cc3055;
   opacity: 0.3;
-}
 }

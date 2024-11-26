@@ -160,7 +160,7 @@ div.txt{
 
 
 
-@media (min-width: 300px) and (max-width: 600px){
+@media (max-width: 300px){
     body{
         background-image: url(Background/cerejeira.png);
         background-size: cover;
