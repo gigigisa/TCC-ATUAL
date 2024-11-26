@@ -155,19 +155,12 @@ div.txt{
 }
 
 
-@media (min-width: 320px) and (max-width: 600px){
-.btn-cadastrar:hover{
-    background-color: #e48cc2 ;
-    border: none;
-    width: 200px;
-    height: 50px;
-    border-radius: 20px;
-    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
-}
 
 
 
-@media (min-width: 320px) and (max-width: 600px){
+
+
+@media (min-width: 300px) and (max-width: 600px){
     body{
         background-image: url(Background/cerejeira.png);
         background-size: cover;
@@ -190,4 +183,4 @@ div.txt{
         box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
     }
 
-  }}
+  }
