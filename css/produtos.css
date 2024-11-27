@@ -173,13 +173,14 @@ height: 375px;
 }
 
 
-@media (max-width: 300px){
+@media (max-width: 500px){
  body{
   margin :0px;
   padding:0;
   background-color:#f9c3d2;
 
  }
+
 
   .btn-desconto {
     background-color: #da5d7a;
