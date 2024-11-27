@@ -189,6 +189,41 @@
 
     </main>
 
+    
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+
+<script>
+
+
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyCHV4TMM33wG1ipmiuzS_NUDx8s0LrvzSQ",
+    authDomain: "cherryblossomcb.firebaseapp.com",
+    databaseURL: "https://cherryblossomcb-default-rtdb.firebaseio.com",
+    projectId: "cherryblossomcb",
+    storageBucket: "cherryblossomcb.firebasestorage.app",
+    messagingSenderId: "981485780049",
+    appId: "1:981485780049:web:5b1a934a3d4999a8d94c70"
+  };
+
+    firebase.initializeApp(firebaseConfig);
+//deslogando conta firebase
+
+const btn = document.querySelector("#btn-sair");
+
+btn.addEventListener("click", () => {
+    firebase.auth().signOut().then(() => {
+        alert("Conta deslogada com sucesso!");
+        window.location.href = "../index.html";
+        history.replaceState(null, "", "../index.html");
+    }).catch(() => {
+        alert("Erro ao sair da conta!");
+    });
+});
+
+
+</script>
 
     <script src="../js/produtos.js"></script>
     </body>
