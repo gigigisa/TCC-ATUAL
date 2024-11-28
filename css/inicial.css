@@ -9,7 +9,7 @@ body{
 main{
     display: flex;
     justify-content: center;
-    background-color: #f5d9ea ;
+    background-color:#f6c4d5;
     height: 300vh;
 
 }
@@ -76,7 +76,7 @@ main{
     width:500px;
     height: 700px;
     margin-top: 9%;
-    background-color: #eec8e0;    
+    background-color: #eec8e0;
     box-shadow: 15px 9px 19px 1px #d6535380;
 }
 
