@@ -118,11 +118,13 @@ li{
 }
 
 #btn-sair {
-  background-color: #ee7da3;
-  width: 150px;
+  background-color:#e76e8a;
+  width: 120px;
   margin-left: 1580px;
   font-size: 25px;
   border: none;
+  border-radius: 10px;
+  box-shadow: 15px 9px 19px 1px #d6535380;
 
 
 }
@@ -203,6 +205,8 @@ height: 375px;
     margin-left: 265px;
     font-size: 25px;
     border: none;
+    border-radius: 10px;
+    box-shadow: 15px 9px 19px 1px #d6535380;
   
   
   }
