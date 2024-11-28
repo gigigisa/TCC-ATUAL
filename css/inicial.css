@@ -160,7 +160,7 @@ div.txt{
 
 
 
-@media (max-width: 300px){
+@media (max-width: 320px){
     body{
         background-image: url(Background/cerejeira.png);
         background-size: cover;
@@ -182,5 +182,13 @@ div.txt{
         background-color: #eec8e0;    
         box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
     }
-
+    #modalsuporte{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        z-index: -1;
+        background-color: #f5d9ea;
+        border: none;
+    }
   }
