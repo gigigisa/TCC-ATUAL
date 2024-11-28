@@ -11,6 +11,7 @@ main{
     justify-content: center;
     background-color: #f5d9ea ;
     height: 200vh;
+    width: 500px;
 
 }
 
@@ -160,7 +161,7 @@ div.txt{
 
 
 
-@media (max-width: 320px){
+@media (max-width: 300px){
     body{
         background-image: url(Background/cerejeira.png);
         background-size: cover;
@@ -190,5 +191,13 @@ div.txt{
         z-index: -1;
         background-color: #f5d9ea;
         border: none;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        background-color: #f5d9ea ;
+        height: 200vh;
+        width: 500px;
+    
     }
   }
