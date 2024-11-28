@@ -175,7 +175,7 @@ height: 375px;
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 300px){
  body{
   margin :0px;
   padding:0;
