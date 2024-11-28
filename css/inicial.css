@@ -10,7 +10,7 @@ main{
     display: flex;
     justify-content: center;
     background-color: #f5d9ea ;
-    height: 200vh;
+    height: 300vh;
 
 }
 
@@ -169,20 +169,35 @@ div.txt{
         height: 100vw;
     }
 
+    #cerejeira2{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        width: 200px;
+        display: none;
+    }
+    .cerejeira{
+        width: 200px;
+        display: flex;
+        margin-bottom: 5%;
+        display: none;
+        
+    }
+
     .quadrado{
         gap: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         border-radius: 40px;
-        width:500px;
+        width:350px;
         height: 700px;
-        margin-top: 10%;
         background-color: #eec8e0;    
         box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.5);
     }
     #modalsuporte{
+        width: 200px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -192,11 +207,12 @@ div.txt{
         border: none;
     }
     main{
+        width: 100vw;
+        height: 100vh;
         display: flex;
         justify-content: center;
+    }
+    html{
         background-color: #f5d9ea ;
-        height: 220vh;
-        width: 650px;
-    
     }
   }
