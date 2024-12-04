@@ -155,6 +155,7 @@ div.txt{
     align-items: center;
     z-index: -1;
     background-color: #f5d9ea;
+   
 
 }
 
@@ -279,7 +280,7 @@ div.txt{
     #btnenviar{
         background-color: #da5d7a;
         border: none;
-        width: 70px;
+        width: 80px;
         height: 40px;
         box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
         border-radius: 25px;
