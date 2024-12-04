@@ -77,10 +77,25 @@ box-shadow: 15px 9px 19px 1px #d6535380;
       
 }
 
-@media (max-width: 414px){
-	
+#btnsairlogin{
+	border: none;
+	background-color: #f85178;
+	margin-top: 185px;
+	color: white;
+	width: 60px;
 }
 
+@media (max-width: 414px){
+	}
+ 
+	#btnsairlogin{
+		border: none;
+		background-color: #f85178;
+		margin-top: -160px;
+		color: white;
+		width: 60px;
+	}
+	 
 .sakura {
 	position: absolute;
 	width: 100%;
