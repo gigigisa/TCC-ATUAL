@@ -262,4 +262,30 @@ div.txt{
     html{
         background-color: #f5d9ea ;
     }
+    #btn-fsair{
+        background-color: #da5d7a;
+        border: none;
+        width: 70px;
+        height: 40px;
+        box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+        border-radius: 25px;
+        color: white;
+        font-size: larger;
+        position: relative;
+        top: 1px;
+        right: 7px;
+        
+    }
+    #btnenviar{
+        background-color: #da5d7a;
+        border: none;
+        width: 70px;
+        height: 40px;
+        box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+        border-radius: 25px;
+        color: white;
+        font-size: larger;
+        position: relative;
+        left: 140px;
+    }
   }
