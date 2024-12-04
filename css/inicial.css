@@ -266,27 +266,44 @@ div.txt{
     #btn-fsair{
         background-color: #da5d7a;
         border: none;
-        width: 70px;
-        height: 40px;
+        width: 80px;
+        height: 30px;
         box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
         border-radius: 25px;
         color: white;
         font-size: medium;
         position: relative;
         top: 1px;
-        right: 7px;
+        right:35px ;
         
     }
     #btnenviar{
         background-color: #da5d7a;
         border: none;
         width: 80px;
-        height: 40px;
+        height: 30px;
         box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
         border-radius: 25px;
         color: white;
         font-size:medium;
         position: relative;
-        left: 140px;
+        left: 130px;
+    }
+
+    #btnenviar:hover{
+        background-color: #cc3055 ;
+        border: none;
+        width: 80px;
+        height: 30px;
+        box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+    
+    }
+    #btn-fsair:hover{
+        background-color: #cc3055 ;
+        border: none;
+        width: 80px;
+        height: 30px;
+        box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+    
     }
   }
