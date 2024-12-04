@@ -135,6 +135,7 @@ div.txt{
     border-radius: 25px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
     color: white;
+    
 
 }
 
@@ -154,9 +155,53 @@ div.txt{
     align-items: center;
     z-index: -1;
     background-color: #f5d9ea;
+
 }
 
+#btn-fsair{
+    background-color: #da5d7a;
+    border: none;
+    width: 70px;
+    height: 40px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+    border-radius: 25px;
+    color: white;
+    font-size: larger;
+    position: relative;
+    top: -55px;
+    right: 13px;
+    
+}
 
+#btn-fsair:hover{
+    background-color: #cc3055 ;
+    border: none;
+    width: 70px;
+    height: 40px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+
+}
+
+#btnenviar{
+    background-color: #da5d7a;
+    border: none;
+    width: 70px;
+    height: 40px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+    border-radius: 25px;
+    color: white;
+    font-size: larger;
+    position: relative;
+    left: 60px;
+}
+#btnenviar:hover{
+    background-color: #cc3055 ;
+    border: none;
+    width: 70px;
+    height: 40px;
+    box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
+
+}
 
 
 
