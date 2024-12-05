@@ -89,6 +89,7 @@ main{
     border-radius: 5px;
     color: white;
     box-shadow: 5px 6px 6px rgba(255, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 
@@ -103,6 +104,7 @@ main{
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
     font-size: large;
     color: white;
+    cursor: pointer;
 }
 .btn-login:hover{
     background-color: #cc3055 ;
@@ -135,6 +137,8 @@ div.txt{
     border-radius: 25px;
     box-shadow: 5px 6px 6px rgba(214, 83, 83, 0.2);
     color: white;
+    cursor: alias;
+    cursor: pointer;
     
 
 }
@@ -171,6 +175,7 @@ div.txt{
     position: relative;
     top: -55px;
     right: 13px;
+    cursor: pointer;
     
 }
 
@@ -194,6 +199,7 @@ div.txt{
     font-size: larger;
     position: relative;
     left: 60px;
+    cursor: pointer;
 }
 #btnenviar:hover{
     background-color: #cc3055 ;

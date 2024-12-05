@@ -64,6 +64,7 @@ main{
     margin-left: 17%;
 	margin-right: 19%;
     margin-top: 100px;
+   
 }
 
 .input{
@@ -83,6 +84,7 @@ main{
 	border-radius:5px;
     align-items: center;
 	justify-content: center;
+    cursor: pointer;
     gap: 60px;
     width: 200px;
     height: 60px;
@@ -128,6 +130,7 @@ main{
 	width: 60px;
 	border-radius: 10px;
     height: 30px;
+    cursor: pointer;
 }
 
 @media (max-width: 414px){
