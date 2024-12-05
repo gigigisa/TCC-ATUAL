@@ -5,60 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/inicial.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
     <title>Cherry Blossom</title>
 </head>
 <body>
-
-
-
     <dialog id="modalsuporte" class="modais">        
-        <p> Relate o erro:</p>
-
+        <p>Relate o erro:</p>
         <form action="https://formsubmit.co/cherryblossomcb24@gmail.com" method="POST">
-
-            <textarea rows="10" cols="20" required name="text"></textarea>
+            <textarea id="texto" rows="10" cols="20" required name="text"></textarea>
             <button class="btn-suporte" id="btnenviar" type="submit">Enviar</button>
             <input type="hidden" name="_subject" value="Nova mensagem!"> 
-             <input type="text" name="_honey" style="display: none;"> 
+            <input type="text" name="_honey" style="display: none;"> 
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://tcc-atual-gigigisas-projects.vercel.app/">
-            <button class="btn-fsuporte" id="btn-fsair"onclick="location.href='./index.html'">Sair</button>
-
+            <button class="btn-fsuporte" id="btn-fsair" type="button">Sair</button>
         </form>
-
     </dialog>
-    
 
-
-<main>
-<div class="quadrado">
-    <div class="cerejeiras">
-        <img src="../imagens/cerejeira.png" alt="" id="cerejeira1" class="cerejeira">
-        <img src="../imagens/cerejeira.png" alt="" id="cerejeira2" class="cerejeira">
-    </div>
-   
-    <div class="btn-txt">
-        <div class="txt">
-            Cadastre para entrar no </br>
-            <strong>Cherry Blossom</strong>
+    <main>
+        <div class="quadrado">
+            <div class="cerejeiras">
+                <img src="../imagens/cerejeira.png" alt="Cerejeira" id="cerejeira1" class="cerejeira">
+                <img src="../imagens/cerejeira.png" alt="Cerejeira" id="cerejeira2" class="cerejeira">
+            </div>
+            <div class="btn-txt">
+                <div class="txt">
+                    Cadastre para entrar no<br>
+                    <strong>Cherry Blossom</strong>
+                </div>
+                <button class="btn-cadastrar" id="Cadastrar2" onclick="location.href='./paginas/cadastro.html'">Cadastrar</button>
+                <button class="btn-login" id="Login2" onclick="location.href='./paginas/login.html'">Login</button>
+                <button class="btn-suporte" id="btn-suporte">🗨️</button>      
+            </div>
         </div>
-        <button class="btn-cadastrar" id="Cadastrar2" onclick="location.href='./paginas/cadastro.html'">Cadastrar</button>
-        </button>
-        <button class="btn-login" id="Login2" onclick="location.href='./paginas/login.html'">Login</button>
-       
-          <button class="btn-suporte" id="btn-suporte"> 🗨️
-          </button>      
-    </div>
-    
-</div>
+    </main>
 
-</button>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCHV4TMM33wG1ipmiuzS_NUDx8s0LrvzSQ",
+            authDomain: "cherryblossomcb.firebaseapp.com",
+            databaseURL: "https://cherryblossomcb-default-rtdb.firebaseio.com",
+            projectId: "cherryblossomcb",
+            storageBucket: "cherryblossomcb.firebasestorage.app",
+            messagingSenderId: "981485780049",
+            appId: "1:981485780049:web:5b1a934a3d4999a8d94c70"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+       
+        document.getElementById('btnenviar').addEventListener('click', function(event) {
+            event.preventDefault(); 
+
+            const texto = document.getElementById('texto').value.trim(); 
+
+            if (texto === "") {
+                alert("Por favor, preencha a caixa de texto antes de enviar.");
+            } else {
+                alert("Suporte enviado com sucesso! Obrigado.");
+                document.querySelector('#modalsuporte form').submit(); 
+            }
+        });
 
         
-</main>
-<script src="../js/suporte.js"></script>
+        document.getElementById('btn-suporte').addEventListener('click', () => {
+            document.getElementById('modalsuporte').showModal();
+        });
+
+       
+        document.getElementById('btn-fsair').addEventListener('click', () => {
+            document.getElementById('modalsuporte').close();
+        });
+    </script>
+
+    <script src="../js/suporte.js"></script>
 </body>
 </html>
-
