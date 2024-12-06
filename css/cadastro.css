@@ -142,12 +142,12 @@ main{
 	color: white;
 	width: 60px;
 	border-radius: 20px;
-	margin-right: 40px;
+	margin-right: -2px;
 }
 
 .cardtodos{
     background-color: #eec8e0;
-    width: 600px;
+    width: 380px;
     height: 700px;
     justify-items: center;
     text-align: center;
