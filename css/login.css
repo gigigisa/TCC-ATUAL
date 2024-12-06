@@ -113,6 +113,9 @@ box-shadow: 15px 9px 19px 1px #d6535380;
     .cardcerejeira{
         width: 380px;
     }
+    #btn-login{
+      margin-left: 90px;
+    }
 
 }
 
