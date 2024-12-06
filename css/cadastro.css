@@ -147,7 +147,7 @@ main{
 
 .cardtodos{
     background-color: #eec8e0;
-    width: 500px;
+    width: 600px;
     height: 700px;
     justify-items: center;
     text-align: center;
@@ -155,33 +155,26 @@ main{
     -webkit-box-shadow: 15px 9px 19px 1px #d6535380;
     -moz-box-shadow: 15px 9px 19px 1px #d6535380;
     box-shadow: 15px 9px 19px 1px #d6535380;
-
+    
 }
 .btn-cadastrar{
-	margin-right: 190px;
+	margin-right: 150px;
 	
 }
 
 .titulo-cherry{
-	margin-right: 60px;
+	margin-right: 0px;
 }
 
 .titulo-cadastro{
-	margin-right: 60px;
+	margin-right: 0px;
 }
 .email{
-	margin-right: 60px
+	margin-right: 0px
 }
 .senha{
-	margin-right: 60px;
+	margin-right: 0px;
 }
-
-
-
-.input{
-   margin-right: 39px;
-}
-
 }
 
 
