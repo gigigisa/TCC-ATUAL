@@ -200,7 +200,7 @@ div.txt{
     position: relative;
     left: 60px;
     cursor: pointer;
-    top: -20px;
+    top: -15px;
 }
 #btnenviar:hover{
     background-color: #cc3055 ;
