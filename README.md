@@ -1,11 +1,18 @@
 <h1>CHERRY BLOSSOM - DESCONTOS</h1>
 <p>O site Cherry Blossom foi criado para oferecer uma solução prática e eficiente para os consumidores que desejam economizar em suas compras, especialmente em um mercado tão competitivo como o dos cosméticos. O principal objetivo da nossa plataforma é facilitar a procura de cupons de descontos proporcionando uma experiência de compra mais acessível, sem erros e com uma comunicação clara. Assim, os consumidores podem aproveitar os melhores preços em lojas físicas, economizando tempo e dinheiro de maneira simples e rápida. </p>
 
+<h2>CONTEUDO</h2>
+<p>Esse software e composto por quatro telas, sendo elas</p>
+<li>inicial</li>
+<li>cadastro</li>
+<li>login</li>
+<li>produtos</li>
+
 <h2>FUNCIONALIDADES</h2>
 
 <ul>
-<li>inicial</li>
-<li>adastro</li>
+<li>inicial:</li>
+<li>cadastro</li>
 <li>login</li>
 <li>produtos</li
 </ul>
@@ -28,41 +35,29 @@
 <li>VS Code ( com a extensão Live Server)</li>
 
 <h2>ESTRUTURA DO PROJETOS</h2>
-<p>cherryblossom/
-  
+
+```
+cherryblossom/
 ├── css/
-
 │   ├── cadastro.css
-
 │   ├── inicial.css
-
 │   ├── login.css
-
 │   └── produtos.css
-
 ├── imagens/
-
 │   ├── logo.png
-
 │   ├── banner.jpg
-
 │   └── outros-arquivos-de-imagem.jpg
-
 ├── js/
-
 │   ├── produtos.js
-
 │   ├── suporte.js
-
 ├── html/
-
 │   ├── cadastro.html
-
 │   ├── login.html
-
 │   ├── produtos2.html
-
 └── index.html
-</p>
+```
+
+
+
 
 
