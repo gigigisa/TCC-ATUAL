@@ -15,7 +15,7 @@
 <h2>🌷FUNCIONALIDADES🌷</h2>
 
 <ul>
-<li>inicial:: Para que os clientes ou futuros clientes tenham a opção de criar uma conta ou somente entrar na conta já existente, ou relatem um problema no botão de suporte.</li>
+<li>inicial: Para que os clientes ou futuros clientes tenham a opção de criar uma conta ou somente entrar na conta já existente, ou relatem um problema no botão de suporte.</li>
 <li>cadastro: Para que os novos usuários consigam criar uma conta para utilizar o software.</li>
 <li>login: Para que os clientes já cadastrados consigam fazer login em suas contas existentes.</li>
 <li>produtos: Uma página  feita especificamente para os clientes conseguirem resgatar seus descontos.</li
